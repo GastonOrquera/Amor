@@ -13,14 +13,14 @@ let iTwo = document.querySelector('.iTwo')
 iOne.addEventListener('click', function () {
     bgOne.classList.toggle('active');
     bgTwo.classList.toggle('active');
+    iTwo.addEventListener('click', function () {
+
+        bgThree.classList.toggle('active');
+    });
 
 });
 
-iTwo.addEventListener('click', function () {
 
-    bgThree.classList.toggle('active');
-
-});
 
 
 ScrollReveal().reveal('.scrollTitles', {
