@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fontOne: "Fjalla One", sans-serif;
+    --fontTwo: "Quicksand", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.bgOne {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.bgOne h1 {
+    font-family: var(--fontOne);
+    font-size: 4rem;
+    color: rgb(30, 30, 30);
+}
+
+.bgOne p {
+    font-family: var(--fontTwo);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.bgOne .hearth {
+    color: rgb(201, 50, 50);
+    font-size: 2.2rem;
+}
+
+.bgOne i {
+    font-size: 3rem;
+    color: rgb(201, 50, 50);
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    border-radius: 10rem;
+    animation: moveXY 2s ease-in-out infinite;
+}
+
+.span-titles {
+    color: rgb(160, 65, 65);
+}
+
+@keyframes moveXY {
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+        color: rgb(235, 42, 42);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-20deg);
+        color: rgb(235, 42, 42);
+    }
+}
+
+.bgOne.active {
+    transition: 4s cubic-bezier(0.5, 0, 0, 1);
+    transform: translate(100%);
+}
+
+.bgOne .bgTwo,
+.bgThree {
+    display: none;
+}
+
+.bgTwo {
+    background-image: url(render-3d-globo-forma-corazon-corazones-colores-sobre-fondo-rosa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.bgTwo h1 {
+    color: rgb(201, 50, 50);
+}
+
+.bgTwo p {
+    color: rgb(236, 211, 209);
+}
+
+.bgTwo .iTwo {
+    bottom: 6rem;
+
+}
+
+.bgTwo.active {
+    transform: translate(-100%);
+    display: block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.bgThree {
+    background-image: url(delicado-objeto-forma-corazon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 4rem 4rem;
+
+    position: absolute;
+}
+
+.bgThree.active {
+    transition: 4s cubic-bezier(0.5, 0, 0, 1);
+    transform: translate(-100%);
+    display: block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bgOne {
+        padding: 1rem 1rem;
+    }
+
+    .bgTwo {
+        padding: 1rem 1rem;
+        background-position: center;
+    }
+
+    .bgTwo h1 {
+        font-size: 2.2rem;
+    }
+
+    .bgTwo .iTwo {
+        left: 43%;
+        bottom: 2rem;
+    }
+
+    .bgThree {
+        padding: 1rem 1rem;
+        background-position: right;
+    }
+
+    .bgThree h1 {
+        font-size: 2.2rem;
+    }
+
+
+}
