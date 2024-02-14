@@ -25,7 +25,7 @@ iTwo.addEventListener('click', function () {
 
 ScrollReveal().reveal('.scrollTitles', {
     origin: 'left',
-    distance: '40px',
+    distance: '20px',
     duration: 1000,
     easing: 'cubic-bezier(0.5,0,0,1)',
     interval: 200
@@ -34,9 +34,9 @@ ScrollReveal().reveal('.scrollTitles', {
 
 ScrollReveal().reveal('.scroll-span', {
     origin: 'right',
-    distance: '40px',
+    distance: '20px',
     duration: 2000,
-    easing: 'cubic-bezier(0.5,0,0,1.4)',
+    easing: 'cubic-bezier(0.5,0,0,1.2)',
     interval: 200
 
 });
